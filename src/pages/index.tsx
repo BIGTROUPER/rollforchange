@@ -39,8 +39,16 @@ const Page = () => {
         </Stack>
       </chakra.section>
 
-      <chakra.section bgColor="#111111">
-        <Stack w="100%" justify="center" align="center" py={{ base: "4rem", md: "16rem" }}>
+      <chakra.section bgColor="#111111" h="40rem" overflow="hidden" pos="relative">
+      <Grid templateColumns={{base:"repeat(1, 1fr)", md:"repeat(3, 1fr)"}} gap={{base:"2", md:"2rem"}} >
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+        </Grid>
+        <Stack w="100%" justify="center" align="center" py={{ base: "4rem", md: "0rem" }} pos="absolute" bottom="4rem">
           <Button justifySelf="flex-end" bgColor="#FFFFFF" rounded="full" variant="primary" size="lg">Watch on YouTube</Button>
         </Stack>
       </chakra.section>
@@ -50,12 +58,20 @@ const Page = () => {
           <Heading flex="2" as="h2" fontFamily="Work Sans" fontSize={{ base: "2rem", md: "4rem" }} fontStyle="italic" fontWeight="700" letterSpacing={{ base: "auto", md: "-0.11rem" }}>Lives in <chakra.span color="#3A76FA">Motion</chakra.span></Heading>
           <Text flex="1" fontSize={{ base: "1rem", md: "0.92rem" }} fontStyle="italic" fontWeight="600" textTransform="uppercase">intimate stories of Raw Humanity and Unexpected Twists, <chakra.span color="rgba(0, 0, 0, 0.32)">A transportation into the diverse tapestry of lives encountered during this extraordinary Journey.</chakra.span></Text>
         </Stack>
-        <Stack w="100%" justify="center" align="center" py={{ base: "4rem", md: "16rem" }}>
-          <Button justifySelf="flex-end" bgColor="#FFFFFF" rounded="full" variant="primary" size="lg">Read more</Button>
+        <Grid templateColumns={{base:"repeat(1, 1fr)", md:"repeat(3, 1fr)"}} gap={{base:"2", md:"2rem"}} px={{base:"2", md:"3rem"}}>
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+        </Grid>
+        <Stack w="100%" justify="center" align="center" py={{ base: "4rem", md: "4rem" }}>
+          <Button justifySelf="flex-end" border="1px solid #000" rounded="full" variant="primary" size="lg">Read more</Button>
         </Stack>
       </chakra.section>
 
-      <chakra.section bgColor="#111111" >
+      <chakra.section bgColor="#111111" py={{ base: "1rem", md: "4rem" }}>
         <Grid py={{ base: "1rem", md: "4rem" }} px={{ base: "1rem", md: "4rem" }} alignItems="center" justifyContent="space-between" templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}>
           <Stack spacing={{base:"1rem", md:"2rem"}} pr={{ base: "1rem", md: "8rem" }}  direction={{ base: "column", md: "column" }}>
             <Heading color="#FFFFFF" as="h2" fontFamily="Work Sans" fontSize={{ base: "2rem", md: "7rem" }} fontWeight="700" letterSpacing={{ base: "auto", md: "-0.11rem" }}>Making A Change</Heading>
