@@ -1,7 +1,7 @@
 import React from "react";
 import { Global, css } from '@emotion/react';
 import NextLink from "next/link";
-import { Avatar, chakra, Image, Icon, Stack, Container, Button, Heading, FormControl, FormHelperText, FormLabel, Input, HStack } from "@chakra-ui/react";
+import { Avatar, chakra, Image, Icon, Stack, Container, Button, Heading, FormControl, FormHelperText, FormLabel, Input, HStack, Box } from "@chakra-ui/react";
 import { FiChevronLeft, FiMoreHorizontal } from "react-icons/fi";
 import Link from "next/link";
 import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
@@ -10,6 +10,21 @@ import { FaTwitter } from "react-icons/fa6";
 type AppLayoutProps = {
     children: React.ReactElement;
 };
+
+const SubscribeEmbed = () => {
+    return (
+      <Box
+        as="iframe"
+        src="https://rollforchange.substack.com/embed"
+        width="580"
+        height="320"
+        borderWidth="1px"
+        borderColor="#EEE"
+        bg="white"
+        allowFullScreen
+      />
+    );
+  };
 
 const Layout = ({ children, ...props }: AppLayoutProps) => {
     return (
@@ -45,11 +60,11 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
                     </Stack>
                     <Stack direction="row" color="#FFFFFF" spacing="4rem" fontStyle="italic">
                         <Link href="/">Home</Link>
-                        <Link href="/">About</Link>
+                        <Link href="/about">About</Link>
                         <Link href="/">Updates</Link>
                         <Link href="/">Stories</Link>
-                        <Link href="/">Support</Link>
-                        <Link href="/">Merchandise</Link>
+                        <Link href="https://commerce.coinbase.com/checkout/49646a0e-93a6-4100-912e-b7e06222c41d">Support</Link>
+                        {/* <Link href="/">Merchandise</Link> */}
                     </Stack>
                     <Stack />
                 </Stack>
@@ -60,31 +75,15 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
             </Container>
 
             <chakra.footer py={{ base: "1rem", md: "4rem" }}>
-                <Stack w="100%" align="center" justify="center" py={{ base: "1rem", md: "4rem" }} spacing={{ base: "1rem", md: "2rem" }}>
+                <Stack w="100%" justify="center" py={{ base: "1rem", md: "4rem" }} spacing={{ base: "1rem", md: "2rem" }}>
+                    <Stack align="center" justify="center">
                     <Heading as="h2">
                         <Image src="/stay_updated.svg" alt="logo" w={72} h="24px" />
                     </Heading>
-                    <Stack direction="row" align="center">
-                        <FormControl>
-                            <Input type="email" placeholder="Email" rounded="14px" h="58px" />
-                        </FormControl>
-                        <Button
-                            bgColor="#000000"
-                            color="#FFFFFF"
-                            type="submit"
-                            variant="primary"
-                            size="lg"
-                            rounded="14px"
-                            fontSize="16px"
-                            fontWeight="400"
-                            px={{ base: "1rem", md: "3rem" }}
-                            h="58px"
-                        >
-                            Subscribe
-                        </Button>
                     </Stack>
+                    <SubscribeEmbed />
 
-                    <HStack fontSize={{ base: "24px", md: "24px" }} py={{ base: "1", md: "1rem" }} spacing={{ base: "1rem", md: "2rem" }} align="center">
+                    <HStack fontSize={{ base: "24px", md: "24px" }} py={{ base: "1", md: "1rem" }} spacing={{ base: "1rem", md: "2rem" }} justify="center" align="center">
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
                         </a>
@@ -99,7 +98,7 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
                         </a>
                     </HStack>
                 </Stack>
-                <chakra.nav borderTop="0.5px solid rgba(0, 0, 0, 12%)">
+                <chakra.nav borderTop="0.5px solid rgb(238, 238, 238)">
                     <Stack py={{ base: 2, md: 4 }} px={{ base: 2, md: 12 }} direction="row" justifyContent="space-between" alignItems="center">
                         <Stack direction="row" alignItems="center" spacing={4} display={{ base: "none", md: "flex" }}>
                             <Link href="/">
@@ -108,11 +107,11 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
                         </Stack>
                         <Stack direction="row" color="#000000" spacing="4rem" fontStyle="italic">
                             <Link href="/">Home</Link>
-                            <Link href="/">About</Link>
+                            <Link href="/about">About</Link>
                             <Link href="/">Updates</Link>
                             <Link href="/">Stories</Link>
                             <Link href="/">Support</Link>
-                            <Link href="/">Merchandise</Link>
+                            {/* <Link href="/">Merchandise</Link> */}
                         </Stack>
                         <Stack />
                     </Stack>
