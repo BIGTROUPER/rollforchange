@@ -81,7 +81,7 @@ const Page = () => {
 
           <chakra.aside ml="auto">
             <Stack ml="auto">
-              <Image src="/img-1.png" alt="Person" boxSize={500} />
+              <Image src="/img-1.png" alt="Person" objectFit="cover" boxSize={{base:"100%", md: 500}} />
             </Stack>
           </chakra.aside>
         </Grid>

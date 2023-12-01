@@ -52,17 +52,17 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
                 `}
             />
             <chakra.nav bgColor="#000000">
-                <Stack py={{ base: 2, md: 8 }} px={{ base: 2, md: 12 }} direction="row" justifyContent="space-between" alignItems="center">
-                    <Stack direction="row" alignItems="center" spacing={4} display={{ base: "none", md: "flex" }}>
+                <Stack spacing={{base:"1rem", md:"auto"}} py={{ base: 4, md: 8 }} px={{ base: 4, md: 12 }} direction="row" justifyContent="space-between" alignItems="center" flexWrap="wrap">
+                    <Stack direction="row" alignItems="center" spacing={4} display={{ base: "flex", md: "flex" }}>
                         <Link href="/">
-                            <Image src="/rfc_logo.svg" alt="logo" boxSize={10} />
+                            <Image src="/rfc_logo.svg" alt="logo" boxSize={{base:"8", md:"10"}} />
                         </Link>
                     </Stack>
-                    <Stack direction="row" color="#FFFFFF" spacing="4rem" fontStyle="italic">
+                    <Stack direction="row" color="#FFFFFF" spacing={{base:"1rem", md:"4rem"}} fontStyle="italic" flexWrap="wrap">
                         <Link href="/">Home</Link>
                         <Link href="/about">About</Link>
                         <Link href="/">Updates</Link>
-                        <Link href="/">Stories</Link>
+                        <Link href="https://rollforchange.substack.com/">Stories</Link>
                         <Link href="https://commerce.coinbase.com/checkout/49646a0e-93a6-4100-912e-b7e06222c41d">Support</Link>
                         {/* <Link href="/">Merchandise</Link> */}
                     </Stack>
@@ -99,18 +99,18 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
                     </HStack>
                 </Stack>
                 <chakra.nav borderTop="0.5px solid rgb(238, 238, 238)">
-                    <Stack py={{ base: 2, md: 4 }} px={{ base: 2, md: 12 }} direction="row" justifyContent="space-between" alignItems="center">
-                        <Stack direction="row" alignItems="center" spacing={4} display={{ base: "none", md: "flex" }}>
+                    <Stack py={{ base: 4, md: 4 }} px={{ base: 4, md: 12 }} direction="row" justifyContent="space-between" alignItems="center" flexWrap="wrap">
+                        <Stack direction="row" alignItems="center" spacing={4} display={{ base: "flex", md: "flex" }}>
                             <Link href="/">
                                 <Image src="/rfc_logo.svg" alt="logo" boxSize={10} />
                             </Link>
                         </Stack>
-                        <Stack direction="row" color="#000000" spacing="4rem" fontStyle="italic">
+                        <Stack direction="row" color="#000000" spacing={{base:"1.5rem", md: "4rem"}} fontStyle="italic" flexWrap="wrap">
                             <Link href="/">Home</Link>
                             <Link href="/about">About</Link>
                             <Link href="/">Updates</Link>
-                            <Link href="/">Stories</Link>
-                            <Link href="/">Support</Link>
+                            <Link href="https://rollforchange.substack.com/">Stories</Link>
+                            <Link href="https://commerce.coinbase.com/checkout/49646a0e-93a6-4100-912e-b7e06222c41d">Support</Link>
                             {/* <Link href="/">Merchandise</Link> */}
                         </Stack>
                         <Stack />
