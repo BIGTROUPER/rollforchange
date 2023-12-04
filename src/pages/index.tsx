@@ -71,7 +71,7 @@ const Page = () => {
           <Text flex="1" fontSize={{ base: "1rem", md: "0.92rem" }} fontStyle="italic" fontWeight="600" textTransform="uppercase">intimate stories of Raw Humanity and Unexpected Twists, <chakra.span color="rgba(0, 0, 0, 0.32)">A transportation into the diverse tapestry of lives encountered during this extraordinary Journey.</chakra.span></Text>
         </Stack>
         <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }} gap={{ base: "2", md: "2rem" }} px={{ base: "2", md: "3rem" }}>
-          <a href="https://www.youtube.com/watch?v=GNuLLhtojv4" target="_blank" rel="noopener noreferrer">
+          <a href="https://open.substack.com/pub/rollforchange/p/roll-for-change-a-journey-across?r=32fr8h&utm_campaign=post&utm_medium=web" target="_blank" rel="noopener noreferrer">
             <Stack cursor="pointer" direction="column" justify="flex-end" pos="relative" bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" transition="0.3s ease-out">
               <AspectRatio maxW='100%' h="100%" w="100%" ratio={4 / 3}>
                 <Image src='https://res.cloudinary.com/dkkbsestl/image/upload/v1701722796/TONYE-1_pkyril.webp' alt='naruto' objectFit='cover' />
