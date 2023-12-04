@@ -37,7 +37,7 @@ const Page = () => {
 
           <chakra.aside bgColor="rgba(255,255,255, 0)" color="#A1A1A1" pr={{ base: "0", md: "16rem" }} w="100%">
               <Text>
-                Hi, I'm Roosevelt—the driving force behind RollForChange and the visionary curator of BIGTROUPER, crafting new futures. As a programmer, artist, and designer, I challenge norms and strive for what many consider impossible. Our present is molded by the hard work of past generations, laying the foundation for an exciting new world. My belief propels change, envisioning a future where challenges, such as forced homelessness, cease to exist. Together, we nurture values rooted in knowledge, confronting fears for positive change. This movement "Roll for Change" promises a proactive, transformative future—one that's truly worth living in.
+                Hi, I'm Roosevelt—the driving force behind RollForChange and the visionary curator of BIGTROUPER, crafting new futures. As a programmer, artist, and designer, I challenge norms and strive for what many consider impossible. Our present is molded by the hard work of past generations, laying the foundation for an exciting new world. My belief propels change, envisioning a future where challenges, such as homelessness, cease to exist. Together, we nurture values rooted in knowledge, confronting fears for positive change. This movement "Roll&nbsp;for Change" promises a proactive, transformative future—one that's truly worth living in.
               </Text>
           </chakra.aside>
         </Stack>

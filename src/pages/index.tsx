@@ -40,16 +40,26 @@ const Page = () => {
       </chakra.section>
 
       <chakra.section bgColor="#111111" h="40rem" overflow="hidden" pos="relative">
-      <Grid templateColumns={{base:"repeat(1, 1fr)", md:"repeat(3, 1fr)"}} gap={{base:"2", md:"2rem"}} >
+        <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }} gap={{ base: "2", md: "2rem" }} >
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
-          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity">
+            <AspectRatio maxW='55rem' w="100%" ratio={2}>
+              <iframe
+                title='naruto'
+                src='https://www.youtube.com/watch?v=GNuLLhtojv4'
+                allowFullScreen
+              />
+            </AspectRatio>
+          </Stack>
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
         </Grid>
         <Stack w="100%" justify="center" align="center" py={{ base: "4rem", md: "0rem" }} pos="absolute" bottom="4rem">
-          <Button justifySelf="flex-end" bgColor="#FFFFFF" rounded="full" variant="primary" size="lg">Watch on YouTube</Button>
+          <a href="https://www.youtube.com/watch?v=GNuLLhtojv4" target="_blank" rel="noopener noreferrer">
+            <Button justifySelf="flex-end" bgColor="#FFFFFF" rounded="full" variant="primary" size="lg">Watch on YouTube</Button>
+          </a>
         </Stack>
       </chakra.section>
 
@@ -58,9 +68,26 @@ const Page = () => {
           <Heading flex="2" as="h2" fontFamily="Work Sans" fontSize={{ base: "2rem", md: "4rem" }} fontStyle="italic" fontWeight="700" letterSpacing={{ base: "auto", md: "-0.11rem" }}>Lives in <chakra.span color="#3A76FA">Motion</chakra.span></Heading>
           <Text flex="1" fontSize={{ base: "1rem", md: "0.92rem" }} fontStyle="italic" fontWeight="600" textTransform="uppercase">intimate stories of Raw Humanity and Unexpected Twists, <chakra.span color="rgba(0, 0, 0, 0.32)">A transportation into the diverse tapestry of lives encountered during this extraordinary Journey.</chakra.span></Text>
         </Stack>
-        <Grid templateColumns={{base:"repeat(1, 1fr)", md:"repeat(3, 1fr)"}} gap={{base:"2", md:"2rem"}} px={{base:"2", md:"3rem"}}>
-          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
-          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
+        <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }} gap={{ base: "2", md: "2rem" }} px={{ base: "2", md: "3rem" }}>
+          <a href="https://www.youtube.com/watch?v=GNuLLhtojv4" target="_blank" rel="noopener noreferrer">
+            <Stack cursor="pointer" direction="column" justify="flex-end" pos="relative" bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" transition="0.3s ease-out">
+              <AspectRatio maxW='100%' h="100%" w="100%" ratio={4 / 3}>
+                <Image src='https://res.cloudinary.com/dkkbsestl/image/upload/v1701722796/TONYE-1_pkyril.webp' alt='naruto' objectFit='cover' />
+              </AspectRatio>
+              <Stack zIndex="2" pos="absolute" bottom="0" right="0" bgColor="#F8709E" px={{ base: "1rem", md: "1.4rem" }}>
+                <Heading as="h3" color="#FDE82B" fontSize={{ base: "lg", md: "3rem" }} fontStyle="italic" fontWeight="600" textAlign="center" textTransform="uppercase">Tonye</Heading>
+              </Stack>
+            </Stack>
+          </a>
+          <Stack pointerEvents="none" opacity="48%" direction="column" justify="flex-end" pos="relative" bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" transition="0.3s ease-out">
+            <AspectRatio maxW='100%' h="100%" w="100%" ratio={4 / 3}>
+              <Image src='https://res.cloudinary.com/dkkbsestl/image/upload/v1701697113/day-1-sodiq_tnrrbc.webp' alt='naruto' objectFit='cover' />
+            </AspectRatio>
+            <Stack zIndex="2" pos="absolute" bottom="0" right="0" bgColor="#F8709E" px={{ base: "1rem", md: "1.4rem" }}>
+              <Heading as="h3" color="#FDE82B" fontSize={{ base: "lg", md: "3rem" }} fontStyle="italic" fontWeight="600" textAlign="center" textTransform="uppercase">Sodiq</Heading>
+            </Stack>
+          </Stack>
+          {/* <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" /> */}
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
@@ -73,15 +100,15 @@ const Page = () => {
 
       <chakra.section bgColor="#111111" py={{ base: "1rem", md: "4rem" }}>
         <Grid py={{ base: "1rem", md: "4rem" }} px={{ base: "1rem", md: "4rem" }} alignItems="center" justifyContent="space-between" templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}>
-          <Stack spacing={{base:"1rem", md:"2rem"}} pr={{ base: "1rem", md: "8rem" }}  direction={{ base: "column", md: "column" }}>
+          <Stack spacing={{ base: "1rem", md: "2rem" }} pr={{ base: "1rem", md: "8rem" }} direction={{ base: "column", md: "column" }}>
             <Heading color="#FFFFFF" as="h2" fontFamily="Work Sans" fontSize={{ base: "2rem", md: "7rem" }} fontWeight="700" letterSpacing={{ base: "auto", md: "-0.11rem" }}>Making A Change</Heading>
-            <Text color="#FFFFFF" fontSize={{ base: "1rem", md: "1.4rem" }} fontStyle="italic" fontWeight="600">The world as we know it is capable of many things, what we see today may not be tomorrow. <chakra.span color="rgba(255, 255, 255, 0.40)">In this fleeting moment, let's make it awesome.</chakra.span></Text>
+            <Text color="#FFFFFF" fontSize={{ base: "1rem", md: "1.4rem" }} fontStyle="italic" fontWeight="600">The world, ever-changing, holds endless possibilities. What we witness today may change tomorrow. <chakra.span color="rgba(255, 255, 255, 0.40)">In this brief moment, let's make it awesome.</chakra.span></Text>
             <Button alignSelf="flex-start" bgColor="#FFFFFF" rounded="full" variant="primary" size="lg">Support change</Button>
           </Stack>
 
           <chakra.aside ml="auto">
             <Stack ml="auto">
-              <Image src="/img-1.png" alt="Person" objectFit="cover" boxSize={{base:"100%", md: 500}} />
+              <Image src="/img-1.png" alt="Person" objectFit="cover" boxSize={{ base: "100%", md: 500 }} />
             </Stack>
           </chakra.aside>
         </Grid>

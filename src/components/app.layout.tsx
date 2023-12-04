@@ -13,28 +13,30 @@ type AppLayoutProps = {
 
 const SubscribeEmbed = () => {
     return (
-      <Box
-        as="iframe"
-        src="https://rollforchange.substack.com/embed"
-        width="580"
-        height="320"
-        borderWidth="1px"
-        borderColor="#EEE"
-        bg="white"
-        allowFullScreen
-      />
+        <Box
+            as="iframe"
+            src="https://rollforchange.substack.com/embed"
+            width="580"
+            height="320"
+            borderWidth="1px"
+            borderColor="#EEE"
+            bg="white"
+            allowFullScreen
+        />
     );
-  };
+};
 
 const Layout = ({ children, ...props }: AppLayoutProps) => {
     return (
         <>
             <Global
                 styles={css`
+                html {
+                    scroll-behavior: smooth;
+                  }
                     body {
-                        background-color: #ffffff;
+                        background-color: #ffffff;  
                     }
-
                     ::selection {
                         background-color: var(--chakra-colors-purple-400);
                         color: #fff;
@@ -52,16 +54,16 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
                 `}
             />
             <chakra.nav bgColor="#000000">
-                <Stack spacing={{base:"1rem", md:"auto"}} py={{ base: 4, md: 8 }} px={{ base: 4, md: 12 }} direction="row" justifyContent="space-between" alignItems="center" flexWrap="wrap">
+                <Stack spacing={{ base: "1rem", md: "auto" }} py={{ base: 4, md: 8 }} px={{ base: 4, md: 12 }} direction="row" justifyContent="space-between" alignItems="center" flexWrap="wrap">
                     <Stack direction="row" alignItems="center" spacing={4} display={{ base: "flex", md: "flex" }}>
                         <Link href="/">
-                            <Image src="/rfc_logo.svg" alt="logo" boxSize={{base:"8", md:"10"}} />
+                            <Image src="/rfc_logo.svg" alt="logo" boxSize={{ base: "8", md: "10" }} />
                         </Link>
                     </Stack>
-                    <Stack direction="row" color="#FFFFFF" spacing={{base:"1rem", md:"4rem"}} fontStyle="italic" flexWrap="wrap">
+                    <Stack direction="row" color="#FFFFFF" spacing={{ base: "1rem", md: "4rem" }} fontStyle="italic" flexWrap="wrap">
                         <Link href="/">Home</Link>
                         <Link href="/about">About</Link>
-                        <Link href="/">Updates</Link>
+                        {/* <Link href="/">Updates</Link> */}
                         <Link href="https://rollforchange.substack.com/">Stories</Link>
                         <Link href="https://commerce.coinbase.com/checkout/49646a0e-93a6-4100-912e-b7e06222c41d">Support</Link>
                         {/* <Link href="/">Merchandise</Link> */}
@@ -77,23 +79,23 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
             <chakra.footer py={{ base: "1rem", md: "4rem" }}>
                 <Stack w="100%" justify="center" py={{ base: "1rem", md: "4rem" }} spacing={{ base: "1rem", md: "2rem" }}>
                     <Stack align="center" justify="center">
-                    <Heading as="h2">
-                        <Image src="/stay_updated.svg" alt="logo" w={72} h="24px" />
-                    </Heading>
+                        <Heading as="h2">
+                            <Image src="/stay_updated.svg" alt="logo" w={72} h="24px" />
+                        </Heading>
                     </Stack>
                     <SubscribeEmbed />
 
                     <HStack fontSize={{ base: "24px", md: "24px" }} py={{ base: "1", md: "1rem" }} spacing={{ base: "1rem", md: "2rem" }} justify="center" align="center">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/iatrouper" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/iatrouper" target="_blank" rel="noopener noreferrer">
                             <FaTwitter />
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.youtube.com/@iroosevelt" target="_blank" rel="noopener noreferrer">
                             <FaYoutube />
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.tiktok.com/@iatrouper" target="_blank" rel="noopener noreferrer">
                             <FaTiktok />
                         </a>
                     </HStack>
@@ -105,10 +107,10 @@ const Layout = ({ children, ...props }: AppLayoutProps) => {
                                 <Image src="/rfc_logo.svg" alt="logo" boxSize={10} />
                             </Link>
                         </Stack>
-                        <Stack direction="row" color="#000000" spacing={{base:"1.5rem", md: "4rem"}} fontStyle="italic" flexWrap="wrap">
+                        <Stack direction="row" color="#000000" spacing={{ base: "1.5rem", md: "4rem" }} fontStyle="italic" flexWrap="wrap">
                             <Link href="/">Home</Link>
                             <Link href="/about">About</Link>
-                            <Link href="/">Updates</Link>
+                            {/* <Link href="/">Updates</Link> */}
                             <Link href="https://rollforchange.substack.com/">Stories</Link>
                             <Link href="https://commerce.coinbase.com/checkout/49646a0e-93a6-4100-912e-b7e06222c41d">Support</Link>
                             {/* <Link href="/">Merchandise</Link> */}
