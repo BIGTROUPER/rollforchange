@@ -24,8 +24,8 @@ const Page = () => {
             </Stack>
             <AspectRatio maxW='55rem' w="100%" ratio={2}>
               <iframe
-                title='naruto'
-                src='https://www.youtube.com/embed/QhBnZ6NPOY0'
+                title='Roll for change'
+                src="https://www.youtube.com/embed/GNuLLhtojv4?si=8AKxRLiAjL31djjq" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowFullScreen
               />
             </AspectRatio>
@@ -42,11 +42,13 @@ const Page = () => {
       <chakra.section bgColor="#111111" h="40rem" overflow="hidden" pos="relative">
         <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }} gap={{ base: "2", md: "2rem" }} >
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
-          <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity">
-            <AspectRatio maxW='55rem' w="100%" ratio={2}>
-              <iframe
-                title='naruto'
-                src='https://www.youtube.com/watch?v=GNuLLhtojv4'
+          <Stack bg="#663A1F" w="100%" h="28rem">
+            <AspectRatio maxW='55rem' w="100%" h="100%" ratio={2}>
+            <iframe
+                title='Roll for change'
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/GNuLLhtojv4?si=8AKxRLiAjL31djjq" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowFullScreen
               />
             </AspectRatio>
