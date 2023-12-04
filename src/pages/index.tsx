@@ -102,7 +102,7 @@ const Page = () => {
         <Grid py={{ base: "1rem", md: "4rem" }} px={{ base: "1rem", md: "4rem" }} alignItems="center" justifyContent="space-between" templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}>
           <Stack spacing={{ base: "1rem", md: "2rem" }} pr={{ base: "1rem", md: "8rem" }} direction={{ base: "column", md: "column" }}>
             <Heading color="#FFFFFF" as="h2" fontFamily="Work Sans" fontSize={{ base: "2rem", md: "7rem" }} fontWeight="700" letterSpacing={{ base: "auto", md: "-0.11rem" }}>Making A Change</Heading>
-            <Text color="#FFFFFF" fontSize={{ base: "1rem", md: "1.4rem" }} fontStyle="italic" fontWeight="600">The world, ever-changing, holds endless possibilities. What we witness today may change tomorrow. <chakra.span color="rgba(255, 255, 255, 0.40)">In this brief moment, let's make it awesome.</chakra.span></Text>
+            <Text color="#FFFFFF" fontSize={{ base: "1rem", md: "1.4rem" }} fontStyle="italic" fontWeight="600">The world, ever-changing, holds endless possibilities. What we witness today may change tomorrow. <chakra.span color="rgba(255, 255, 255, 0.40)">In this brief moment, let&apos;s make it awesome.</chakra.span></Text>
             <Button alignSelf="flex-start" bgColor="#FFFFFF" rounded="full" variant="primary" size="lg">Support change</Button>
           </Stack>
 
