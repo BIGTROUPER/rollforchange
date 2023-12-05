@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { AspectRatio, Box, Container, Image, Heading, Stack, chakra, Button, Text, Grid } from '@chakra-ui/react'
 import Layout from 'components/app.layout'
 import { InlineSkate } from 'components/_icons'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -96,7 +97,9 @@ const Page = () => {
           <Stack bg="#663A1F" w="100%" h="28rem" mixBlendMode="luminosity" />
         </Grid>
         <Stack w="100%" justify="center" align="center" py={{ base: "4rem", md: "4rem" }}>
+        <Link href="https://rollforchange.substack.com/">
           <Button justifySelf="flex-end" border="1px solid #000" rounded="full" variant="primary" size="lg">Read more</Button>
+          </Link>
         </Stack>
       </chakra.section>
 
@@ -105,7 +108,9 @@ const Page = () => {
           <Stack spacing={{ base: "1rem", md: "2rem" }} pr={{ base: "1rem", md: "8rem" }} direction={{ base: "column", md: "column" }}>
             <Heading color="#FFFFFF" as="h2" fontFamily="Work Sans" fontSize={{ base: "2rem", md: "7rem" }} fontWeight="700" letterSpacing={{ base: "auto", md: "-0.11rem" }}>Making A Change</Heading>
             <Text color="#FFFFFF" fontSize={{ base: "1rem", md: "1.4rem" }} fontStyle="italic" fontWeight="600">The world, ever-changing, holds endless possibilities. What we witness today may change tomorrow. <chakra.span color="rgba(255, 255, 255, 0.40)">In this brief moment, let&apos;s make it awesome.</chakra.span></Text>
+            <Link href="https://commerce.coinbase.com/checkout/49646a0e-93a6-4100-912e-b7e06222c41d">
             <Button alignSelf="flex-start" bgColor="#FFFFFF" rounded="full" variant="primary" size="lg">Support change</Button>
+            </Link>
           </Stack>
 
           <chakra.aside ml="auto">
